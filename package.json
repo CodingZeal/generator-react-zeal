@@ -1,0 +1,17 @@
+{
+  "name": "generator-react-zeal",
+  "version": "0.1.0",
+  "description": "Yeoman generator for React Zeal",
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "humps": "^2.0.0",
+    "yeoman-generator": "^0.24.1"
+  }
+}
