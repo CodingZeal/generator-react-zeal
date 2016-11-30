@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import 'normalize.css'
+
 import App from './modules/app/components/App'
 
 const rootEl = document.getElementById('root')
