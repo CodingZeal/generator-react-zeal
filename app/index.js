@@ -21,18 +21,12 @@ module.exports = generators.Base.extend({
       this.destinationPath('package.json'),
       { appName: this.appName }
     )
-    this.fs.copy(
-      this.templatePath('.sass-lint.yml'),
-      this.destinationPath('.sass-lint.yml')
-    )
+
     this.fs.copy(
       this.templatePath('client'),
       this.destinationPath('client')
     )
-    this.fs.copy(
-      this.templatePath('public'),
-      this.destinationPath('public')
-    )
+
     this._mergeGitIgnore()
   },
 
