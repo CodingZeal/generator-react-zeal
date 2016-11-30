@@ -10,7 +10,9 @@
     "normalize.css": "^5.0.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
-    "react-router": "^4.0.0-alpha.6"
+    "react-redux": "^4.4.6",
+    "react-router": "^4.0.0-alpha.6",
+    "redux": "^3.6.0"
   },
   "scripts": {
     "start": "react-scripts start",

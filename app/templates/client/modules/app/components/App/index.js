@@ -1,22 +1,20 @@
 import React from 'react'
-import { BrowserRouter, Match, Miss } from 'react-router'
+import { Match, Miss } from 'react-router'
 
 import styles from './styles.scss'
 import logo from './logo.png'
 
-export default function App() {
+export default function App({ store }) {
   return (
-    <BrowserRouter>
-      <div className={styles.root}>
-        <div className={styles.header}>
-          <img src={logo} className={styles.logo} alt='logo' />
-          <h2>Welcome!</h2>
-        </div>
-
-        <Match exactly pattern='/' component={Home} />
-        <Miss component={NotFound} />
+    <div className={styles.root}>
+      <div className={styles.header}>
+        <img src={logo} className={styles.logo} alt='logo' />
+        <h2>Welcome!</h2>
       </div>
-    </BrowserRouter>
+
+      <Match exactly pattern='/' component={Home} />
+      <Miss component={NotFound} />
+    </div>
   )
 }
 
