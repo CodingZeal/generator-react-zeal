@@ -1,5 +1,5 @@
 {
-  "name": "<%= appName %>",
+  "name": "test",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -12,7 +12,8 @@
     "react-dom": "^15.4.1",
     "react-redux": "^4.4.6",
     "react-router": "^4.0.0-alpha.6",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "zeal-redux-utils": "^0.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
