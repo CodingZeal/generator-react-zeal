@@ -24,6 +24,7 @@ function Root({ currentApp }) {
 
 if (module.hot) {
   module.hot.accept('./modules/app/components/App', () => {
+    // eslint-disable-next-line global-require
     const NextApp = require('./modules/app/components/App').default
 
     ReactDOM.render(<Root currentApp={NextApp} />, rootEl)

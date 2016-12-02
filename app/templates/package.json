@@ -1,8 +1,15 @@
 {
-  "name": "<%= appName %>",
+  "name": "do-not-commit",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.11.1",
+    "eslint-config-zeal": "^0.13.0",
+    "eslint-import-resolver-webpack": "^0.7.0",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.7.1",
     "history": "^4.4.1",
     "normalize.css": "^5.0.0",
     "react": "^15.4.1",
@@ -16,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "NODE_ENV=production eslint 'client/**/*.js' --max-warnings 0"
   },
   "devDependencies": {
     "@zeal/react-scripts": "^0.1.5"
