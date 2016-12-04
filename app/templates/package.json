@@ -1,5 +1,5 @@
 {
-  "name": "do-not-commit",
+  "name": "<%= appName %>",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,7 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "NODE_ENV=production eslint 'client/**/*.js' --max-warnings 0"
+    "lint": "eslint 'client/**/*.js' --max-warnings 0"
   },
   "devDependencies": {
     "@zeal/react-scripts": "^0.1.5"
