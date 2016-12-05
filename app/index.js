@@ -31,7 +31,7 @@ module.exports = generators.Base.extend({
   },
 
   _mergeGitIgnore: function() {
-    const template = this.fs.read(this.templatePath('.gitignore'))
+    const template = this.fs.read(this.templatePath('gitignore'))
     const existing = this.fs.read(this.destinationPath('.gitignore'), {
       defaults: ''
     })
