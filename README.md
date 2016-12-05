@@ -23,9 +23,9 @@ yo react-zeal
 
 ## Context
 
-This generator has a devDependeny of [@zeal/react-scripts](https://github.com/CodingZeal/create-react-app) which is a fork of the "react CLI" from facebook.  This fork marches closely in step with facebook's version with some differences in configuration.  These changes support some more advanced webpack features as well as plug-and-play with frameworks like Rails and Phoenix.  
+This generator has a devDependency of [@zeal/react-scripts](https://github.com/CodingZeal/create-react-app) which is a fork of the "react CLI" from facebook.  This fork marches closely in step with facebook's version with some differences in configuration.  These changes support some more advanced webpack features as well as plug-and-play with frameworks like Rails and Phoenix.  
 
-The features we have add support for include;
+The features we have added support for include:
 
 - CSS Modules
 - SASS
