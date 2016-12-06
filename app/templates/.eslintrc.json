@@ -9,5 +9,8 @@
   },
   "rules": {
     "import/extensions": ["warn", "never", { "scss": "always" }]
+  },
+  "env": {
+    "jest": true
   }
 }
