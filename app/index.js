@@ -22,9 +22,11 @@ module.exports = generators.Base.extend({
       { appName: this.appName }
     )
 
+    this.fs.copy(this.templatePath('client'), this.destinationPath('client'))
+
     this.fs.copy(
-      this.templatePath('client'),
-      this.destinationPath('client')
+      this.templatePath('.eslintrc.json'),
+      this.destinationPath('.eslintrc.json')
     )
 
     this._mergeGitIgnore()

@@ -9,6 +9,12 @@ describe('react-zeal', () => {
   })
 
   test('generated package.json has "apples" as the package name', () => {
-    assert.fileContent('package.json', /"name": "apples"/)
+    assert.jsonFileContent('package.json', { "name": "apples" })
+  })
+
+  test('copies .eslintrc.json file', () => {
+    assert.jsonFileContent('.eslintrc.json', {
+      "extends": [ "zeal", "zeal/react" ]
+    })
   })
 })
