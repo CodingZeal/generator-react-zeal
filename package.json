@@ -1,6 +1,6 @@
 {
   "name": "generator-react-zeal",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "description": "Yeoman generator for React Zeal",
   "files": [
     "app"
@@ -22,5 +22,8 @@
     "jest": "^17.0.3",
     "yeoman-assert": "^2.2.1",
     "yeoman-test": "^1.6.0"
+  },
+  "jest": {
+    "testPathIgnorePatterns": ["/node_modules/", "/app/templates/"]
   }
 }

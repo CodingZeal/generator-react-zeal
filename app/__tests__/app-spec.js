@@ -8,6 +8,10 @@ describe('react-zeal', () => {
       .withPrompts({ name: 'apples' })
   })
 
+  test('creates root level files', () => {
+    assert.file(['.gitignore', 'package.json'])
+  })
+
   test('generated package.json has "apples" as the package name', () => {
     assert.jsonFileContent('package.json', { "name": "apples" })
   })
