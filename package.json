@@ -22,5 +22,8 @@
     "jest": "^17.0.3",
     "yeoman-assert": "^2.2.1",
     "yeoman-test": "^1.6.0"
+  },
+  "jest": {
+    "testPathIgnorePatterns": ["/node_modules/", "/app/templates/"]
   }
 }
