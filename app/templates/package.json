@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "babel-eslint": "^7.1.1",
+    "enzyme": "^2.6.0",
     "eslint": "^3.11.1",
     "eslint-config-zeal": "^0.14.0",
     "eslint-import-resolver-webpack": "^0.7.0",
@@ -12,7 +13,9 @@
     "eslint-plugin-react": "^6.7.1",
     "history": "^4.4.1",
     "normalize.css": "^5.0.0",
+    "npm-run-all": "^3.1.2",
     "react": "^15.4.1",
+    "react-addons-test-utils": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-redux": "^4.4.6",
     "react-router": "^4.0.0-alpha.6",
@@ -24,7 +27,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "eslint 'client/**/*.js' --max-warnings 0"
+    "lint": "eslint 'client/**/*.js' --max-warnings 0",
+    "validate": "npm-run-all --parallel lint test"
   },
   "devDependencies": {
     "@zeal/react-scripts": "^0.1.5"
