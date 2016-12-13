@@ -34,6 +34,6 @@
     "validate": "npm-run-all --parallel lint test"
   },
   "devDependencies": {
-    "@zeal/react-scripts": "^0.1.7"
+    "@zeal/react-scripts": "^0.1.8"
   }
 }
