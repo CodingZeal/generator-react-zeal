@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { ApolloProvider } from 'react-apollo'
 import { BrowserRouter } from 'react-router'
-import { Provider } from 'react-redux'
 import 'normalize.css'
 
 import App from './modules/app/components/App'
-import { configureStore } from './base'
+import { apolloClient, configureStore } from './base'
 
 const rootEl = document.getElementById('root')
 const store = configureStore()
@@ -14,11 +14,11 @@ ReactDOM.render(<Root currentApp={App} />, rootEl)
 
 function Root({ currentApp }) {
   return (
-    <Provider store={store}>
+    <ApolloProvider store={store} client={apolloClient}>
       <BrowserRouter>
         {React.createElement(currentApp)}
       </BrowserRouter>
-    </Provider>
+    </ApolloProvider>
   )
 }
 
