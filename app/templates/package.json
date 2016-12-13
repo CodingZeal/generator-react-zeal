@@ -29,6 +29,7 @@
     "react-toolbox": "^1.3.1",
     "redux": "^3.6.0",
     "redux-devtools-extension": "^1.0.0",
+    "sass-lint": "^1.10.2",
     "zeal-redux-utils": "^0.1.1"
   },
   "scripts": {
@@ -36,7 +37,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "eslint 'client/**/*.js' --max-warnings 0",
+    "lint": "npm-run-all --parallel lint:*",
+    "lint:js": "eslint 'client/**/*.js' --max-warnings 0",
+    "lint:sass": "sass-lint -v --max-warnings 0",
     "validate": "npm-run-all --parallel lint test"
   }
 }
