@@ -2,7 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { ApolloProvider } from 'react-apollo'
 import { BrowserRouter } from 'react-router'
-import 'normalize.css'
+import { ThemeProvider } from 'react-css-themr'
+
+import './styles/commons.scss'
+import theme from './styles/theme'
 
 import App from './modules/app/components/App'
 import { apolloClient, configureStore } from './base'
@@ -15,9 +18,11 @@ ReactDOM.render(<Root currentApp={App} />, rootEl)
 function Root({ currentApp }) {
   return (
     <ApolloProvider store={store} client={apolloClient}>
-      <BrowserRouter>
-        {React.createElement(currentApp)}
-      </BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <BrowserRouter>
+          {React.createElement(currentApp)}
+        </BrowserRouter>
+      </ThemeProvider>
     </ApolloProvider>
   )
 }
