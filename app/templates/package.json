@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@zeal/react-scripts": "^0.1.8",
     "apollo-client": "^0.5.19",
     "babel-eslint": "^7.1.1",
     "enzyme": "^2.6.0",
@@ -32,8 +33,5 @@
     "eject": "react-scripts eject",
     "lint": "eslint 'client/**/*.js' --max-warnings 0",
     "validate": "npm-run-all --parallel lint test"
-  },
-  "devDependencies": {
-    "@zeal/react-scripts": "^0.1.8"
   }
 }
