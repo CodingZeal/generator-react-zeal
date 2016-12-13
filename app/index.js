@@ -29,6 +29,11 @@ module.exports = generators.Base.extend({
       this.destinationPath('.eslintrc.json')
     )
 
+    this.fs.copy(
+      this.templatePath('.sass-lint.yml'),
+      this.destinationPath('.sass-lint.yml')
+    )
+
     this._mergeGitIgnore()
   },
 
