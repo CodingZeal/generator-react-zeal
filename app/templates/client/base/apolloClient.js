@@ -1,4 +1,3 @@
-/* eslint-disable no-underscore-dangle */
 import ApolloClient from 'apollo-client'
 
 export default new ApolloClient({
