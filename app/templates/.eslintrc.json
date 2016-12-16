@@ -5,7 +5,15 @@
   ],
   "root": true,
   "settings": {
-    "import/resolver": "webpack"
+    "import/resolver": {
+      "webpack": {
+        "config": {
+          "resolve": {
+            "root": "./client"
+          }
+        }
+      }
+    }
   },
   "rules": {
     "import/extensions": ["warn", "never", { "scss": "always" }],
