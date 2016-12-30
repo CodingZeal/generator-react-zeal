@@ -2,10 +2,10 @@
 @import '~react-toolbox/lib/globals';
 
 // Reference react-toolbox globals here https://github.com/react-toolbox/react-toolbox/blob/dev/components/_globals.scss
-// Overrid react-toolbox globals in this file.
+// Override react-toolbox globals in this file.
 //-- Sizing
 $unit: .625rem;
 
 // Assign colors to semantic color names and or override react-toolbox colors, example:
 //-- Color Configuration
-// $color-primary: $zeal-orange;
+$color-primary: $zeal-orange;
