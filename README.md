@@ -17,7 +17,7 @@ npm install -g yo generator-react-zeal
 ```
 
 ## Usage
-`generator-react-zeal` is a [yeoman](http://yeoman.io/) generator and follows the usage pattern commonly found with the yo cli
+`generator-react-zeal` is a [yeoman](http://yeoman.io/) generator and follows the usage pattern commonly found with the yo cli.
 
 ```
 # Create new directory and `cd` into it
@@ -27,7 +27,7 @@ mkdir myApp && cd myApp
 yo react-zeal
 ```
 
-Viola! Now craft with React
+Voila! Now craft with React.
 
 ## Context
 
@@ -74,7 +74,7 @@ export RTButton from './button.scss'
 ```
 This allows the apps `ThemeProvider` context to pass this information to react-toolbox.  By default we follow this pattern for `ProgressBar` as an example.
 
-Great, you now have hooked into the theme provider.  Now you just have to import the _un-themed_ version of the component from react-toolbox and like the theme provider do the rest.
+Great, you now have hooked into the theme provider.  Now you just have to import the _un-themed_ version of the component from react-toolbox and let the theme provider do the rest.
 
 In your component import like this;
 
