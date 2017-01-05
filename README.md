@@ -51,12 +51,12 @@ import styles from './styles.scss'
 In order to better support usage inside Rails etc we have moved the public directory inside the client directory.  Thus the frameworks' root will not be cluttered with anything other than the client directory.  The generated app will run with `npm start` and you can still develop on `localhost:3000` if you are not in the context of a larger framework.
 
 ## React Toolbox
-The generator installs by default [React Toolbox](http://react-toolbox.com/) which is set of Material Design components.  At Zeal we have found this project to be an excellent starting point for many common UI patterns.  You can of-course ignore it and or remove it from the generated app if you are so inclined.
+The generator installs by default [React Toolbox](http://react-toolbox.com/) which is a set of Material Design components.  At Zeal we have found this project to be an excellent starting point for many common UI patterns.  You can of-course ignore it and or remove it from the generated app if you are so inclined.
 
 ### Using Customizable React Toolbox Components
 To make for the most flexibility when dealing with React Toolbox we recommend following the pattern of manually adding and exporting the desired components theme.  Then instead of importing the pre-themed component from `react-toolbox`, import the un-themed version.  Don't worry, if you have exported the theme manually it will still have the default theme, and now you will have more flexibility in terms of overriding theme defaults.  
 
-For example you would like to use the button component from `react-toolbox` and would like to override the default primary color.  You will want to import / export the that buttons theme from `react-toolbox` along with a hook for your customization.
+For example you would like to use the button component from `react-toolbox` and would like to override the default primary color.  You will want to import / export that button's theme from `react-toolbox` along with a hook for your customization.
 
 In the `client/styles/react-toolbox` directory create a new file called `button.scss`.   In `button.scss` first import your apps global styles;
 
@@ -94,3 +94,55 @@ Once you have imported the Button component that will respond to the theme provi
 ### Style Dependencies
 
 Many of the React Toolbox components have styles which depend on other components from React Toolbox having their styles present.  For example some of the react components have an option for the 'ripple' effect.  So, if you would like to set that property on a list item or a button etc, you should be sure to import / export the ripple theme as described above.
+
+## Themr
+The generator installs by default [React CSS Themr](https://github.com/javivelasco/react-css-themr) which allows the decorating of components with a simple mechanism for easily "theming" the components.
+
+### Creating a "Themed" Component
+Creating a themed component is easy, and builds of the concept of composing css modules.  Apply the decorator to a component on export passing a css module and receiving the incoming theme as props.
+
+```scss
+// MyComponent/theme.scss
+.myComponent {
+  background-color: red
+}
+```
+
+```javascript
+// MyComponent/index.js
+import { themr } from 'react-css-themr'
+
+import myComponentTheme from './theme.scss'
+
+function MyComponent({ theme }) {
+  return (
+    <div className={theme.myComponent}>Hello World</div>
+  )
+}
+
+export default themr('', myComponentTheme)(MyComponent)
+```
+
+In the above example we import the styles object from `theme.scss` and pass it as the second argument to the themr decorator.  Themr will pass that object into our wrapped component as `theme` on the components props.  When this component is used, `theme` can be passed to the component and the information in the incoming style object will be merged with "default" theme.  There are options that can be passed in regards to the approach for merging the themes, and you can read up on them [here](https://github.com/javivelasco/react-css-themr#combining-css-modules).  To illustrate passing a theme override;
+
+```scss
+// ParentComponent/theme.scss
+.myComponent {
+  background-color: blue
+}
+```
+
+```javascript
+// MyComponent/index.js
+import { themr } from 'react-css-themr'
+
+import MyComponent from './MyComponent'
+import myParentComponentTheme from './theme.scss'
+
+function MyParentComponent({ theme }) {
+  return <MyComponent theme={theme} />
+}
+
+export default themr('', myParentComponentTheme)(MyParentComponent)
+```
+Above the parent component is overriding the `background-color` by passing custom theme information to the themed component.  We generally wrap all components in `themr`, which allows for great flexibility in using our components elsewhere in our apps.
