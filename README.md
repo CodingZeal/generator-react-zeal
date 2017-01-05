@@ -51,12 +51,12 @@ import styles from './styles.scss'
 In order to better support usage inside Rails etc we have moved the public directory inside the client directory.  Thus the frameworks' root will not be cluttered with anything other than the client directory.  The generated app will run with `npm start` and you can still develop on `localhost:3000` if you are not in the context of a larger framework.
 
 ## React Toolbox
-The generator installs by default [React Toolbox](http://react-toolbox.com/) which is set of Material Design components.  At Zeal we have found this project to be an excellent starting point for many common UI patterns.  You can of-course ignore it and or remove it from the generated app if you are so inclined.
+The generator installs by default [React Toolbox](http://react-toolbox.com/) which is a set of Material Design components.  At Zeal we have found this project to be an excellent starting point for many common UI patterns.  You can of-course ignore it and or remove it from the generated app if you are so inclined.
 
 ### Using Customizable React Toolbox Components
 To make for the most flexibility when dealing with React Toolbox we recommend following the pattern of manually adding and exporting the desired components theme.  Then instead of importing the pre-themed component from `react-toolbox`, import the un-themed version.  Don't worry, if you have exported the theme manually it will still have the default theme, and now you will have more flexibility in terms of overriding theme defaults.  
 
-For example you would like to use the button component from `react-toolbox` and would like to override the default primary color.  You will want to import / export the that buttons theme from `react-toolbox` along with a hook for your customization.
+For example you would like to use the button component from `react-toolbox` and would like to override the default primary color.  You will want to import / export that button's theme from `react-toolbox` along with a hook for your customization.
 
 In the `client/styles/react-toolbox` directory create a new file called `button.scss`.   In `button.scss` first import your apps global styles;
 
