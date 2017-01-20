@@ -19,7 +19,7 @@
     "test:watch": "yarn jest -- --watch --notify"
   },
   "devDependencies": {
-    "jest": "^17.0.3",
+    "jest": "^18.1.0",
     "yeoman-assert": "^2.2.1",
     "yeoman-test": "^1.6.0"
   },
