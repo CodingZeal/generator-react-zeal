@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@zeal/react-scripts": "^0.1.10",
+    "@zeal/react-scripts": "^0.1.13",
     "apollo-client": "^0.5.19",
     "babel-eslint": "^7.1.1",
     "babel-polyfill": "^6.20.0",
