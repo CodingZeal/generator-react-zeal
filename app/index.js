@@ -1,8 +1,8 @@
-const generators = require('yeoman-generator')
+const Generator = require('yeoman-generator')
 const humps = require('humps')
 
-module.exports = generators.Base.extend({
-  prompting: function() {
+module.exports = class ReactZeal extends Generator {
+  prompting() {
     return this.prompt([
       {
         type: 'input',
@@ -13,9 +13,9 @@ module.exports = generators.Base.extend({
     ]).then(function(answers) {
       this.appName = kabob(answers.name)
     }.bind(this))
-  },
+  }
 
-  writing: function() {
+  writing() {
     this.fs.copyTpl(
       this.templatePath('package.json'),
       this.destinationPath('package.json'),
@@ -35,9 +35,9 @@ module.exports = generators.Base.extend({
     )
 
     this._mergeGitIgnore()
-  },
+  }
 
-  _mergeGitIgnore: function() {
+  _mergeGitIgnore() {
     const template = this.fs.read(this.templatePath('gitignore'))
     const existing = this.fs.read(this.destinationPath('.gitignore'), {
       defaults: ''
@@ -48,7 +48,7 @@ module.exports = generators.Base.extend({
       existing + '\n\n' + template
     )
   }
-})
+}
 
 function kabob(string) {
   return humps.decamelize(humps.camelize(string), { separator: '-' })
