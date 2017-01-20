@@ -29,6 +29,10 @@ yo react-zeal
 
 Voila! Now craft with React.
 
+## Example
+
+Checkout our usage in the context of Phoenix app - https://github.com/CodingZeal/phoenix-react-apollo-demo
+
 ## Context
 
 This generator has a devDependency of [@zeal/react-scripts](https://github.com/CodingZeal/create-react-app) which is a fork of the "react CLI" from facebook.  This fork marches closely in step with facebook's version with some differences in configuration.  These changes support some more advanced webpack features as well as plug-and-play with frameworks like Rails and Phoenix.  
