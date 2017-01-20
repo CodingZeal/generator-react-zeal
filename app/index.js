@@ -1,7 +1,7 @@
 const Generator = require('yeoman-generator')
 const humps = require('humps')
 
-module.exports = class extends Generator {
+module.exports = class ReactZeal extends Generator {
   prompting() {
     return this.prompt([
       {
