@@ -150,3 +150,10 @@ function MyParentComponent({ theme }) {
 export default themr('', myParentComponentTheme)(MyParentComponent)
 ```
 Above the parent component is overriding the `background-color` by passing custom theme information to the themed component.  We generally wrap all components in `themr`, which allows for great flexibility in using our components elsewhere in our apps.
+
+## Credits
+
+Authored by the Engineering Team of [Coding ZEAL](https://codingzeal.com?utm_source=github)
+
+This is freely distributed under the [MIT license](LICENSE).
+
