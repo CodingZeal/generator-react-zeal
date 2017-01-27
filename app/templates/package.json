@@ -1,5 +1,5 @@
 {
-  "name": "<%= appName %>",
+  "name": "test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +13,7 @@
     "eslint-import-resolver-webpack": "^0.8.1",
     "eslint-loader": "^1.6.1",
     "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jest": "^1.0.2",
     "eslint-plugin-react": "^6.9.0",
     "history": "^4.4.1",
     "immutability-helper": "^2.0.0",
