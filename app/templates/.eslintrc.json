@@ -15,13 +15,6 @@
       }
     }
   },
-  "rules": {
-    "import/extensions": ["warn", "never", { "scss": "always" }],
-    "import/no-named-as-default": "off",
-    "react/no-set-state": "off",
-    "no-invalid-this": "off",
-    "no-underscore-dangle": "off"
-  },
   "env": {
     "jest": true
   }
