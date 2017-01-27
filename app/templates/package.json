@@ -36,7 +36,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --coverage",
+    "test:watch": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "npm-run-all --parallel lint:*",
     "lint:js": "eslint 'client/**/*.js' --max-warnings 0",
