@@ -1,5 +1,5 @@
 import React from 'react'
-import { Match, Miss } from 'react-router'
+import { Switch, Route } from 'react-router-dom'
 import { themr } from 'react-css-themr'
 
 import appTheme from './theme.scss'
@@ -13,8 +13,10 @@ export function App({ theme }) {
         <h4>Welcome!</h4>
       </div>
 
-      <Match exactly pattern='/' component={Home} />
-      <Miss component={NotFound} />
+      <Switch>
+        <Route exact pattern='/' component={Home} />
+        <Route component={NotFound} />
+      </Switch>
     </div>
   )
 }
