@@ -14,7 +14,7 @@ export function App({ theme }) {
       </div>
 
       <Switch>
-        <Route exact pattern='/' component={Home} />
+        <Route exact path='/' component={Home} />
         <Route component={NotFound} />
       </Switch>
     </div>
