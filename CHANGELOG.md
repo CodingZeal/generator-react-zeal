@@ -4,7 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/generator-react-zeal/compare/v0.2.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/generator-react-zeal/compare/v0.2.1...HEAD)
+
+## [0.3.0](https://github.com/CodingZeal/generator-react-zeal/compare/v0.2.0...v0.2.1) - 2017-02-20
+
+### Changed
+- Update to React Router 4 beta ([#31](https://github.com/CodingZeal/generator-react-zeal/pull/31))
 
 ## [0.2.0](https://github.com/CodingZeal/generator-react-zeal/compare/v0.1.9...v0.2.0) - 2017-01-20
 
