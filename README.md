@@ -12,7 +12,12 @@ the Zeal client app strategy.
 ## Installation
 
 ```
-# Install globally the yo cli as well as this generator
+# Install yo cli, as well as this generator, globally using either yarn or npm
+
+# with yarn
+yarn global add yo generator-react-zeal
+
+# with npm
 npm install -g yo generator-react-zeal
 ```
 
@@ -27,9 +32,19 @@ mkdir myApp && cd myApp
 yo react-zeal
 
 # install all the things
+
+# with yarn
+yarn
+
+# with npm
 npm install
 
 # start your app on http://localhost:3000
+
+# with yarn
+yarn start
+
+# with npm
 npm start
 ```
 
@@ -58,7 +73,7 @@ import styles from './styles.scss'
 <div className={styles.foo}>...</div>
 ```
 
-In order to better support usage inside Rails etc we have moved the public directory inside the client directory.  Thus the frameworks' root will not be cluttered with anything other than the client directory.  The generated app will run with `npm start` and you can still develop on `localhost:3000` if you are not in the context of a larger framework.
+In order to better support usage inside Rails etc we have moved the public directory inside the client directory.  Thus the frameworks' root will not be cluttered with anything other than the client directory.  The generated app will run with `yarn start` (or `npm start`) and you can still develop on `localhost:3000` if you are not in the context of a larger framework.
 
 ## React Toolbox
 The generator installs by default [React Toolbox](http://react-toolbox.com/) which is a set of Material Design components.  At Zeal we have found this project to be an excellent starting point for many common UI patterns.  You can of-course ignore it and or remove it from the generated app if you are so inclined.
@@ -162,4 +177,3 @@ Above the parent component is overriding the `background-color` by passing custo
 Authored by the Engineering Team of [Coding ZEAL](https://codingzeal.com?utm_source=github)
 
 This is freely distributed under the [MIT license](LICENSE).
-
