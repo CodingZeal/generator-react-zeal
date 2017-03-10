@@ -1,11 +1,13 @@
 # generator-react-zeal
 
+Yeoman Generator for [Zeal's](https://codingzeal.com/) React Boilerplate.
+
 [![npm version](https://img.shields.io/npm/v/generator-react-zeal.svg)](https://www.npmjs.com/package/generator-react-zeal)
 [![CircleCI](https://circleci.com/gh/CodingZeal/generator-react-zeal.svg?style=shield&circle-token=62c69a799a2c2a4ad70148f0a4a398b38279ad91)](https://circleci.com/gh/CodingZeal/generator-react-zeal)
 
-Yeoman Generator for [Zeal's](https://codingzeal.com/) React Boilerplate.  This generator can be used with `yarn` or `npm`. This is a [yeoman](http://yeoman.io/) generator and follows the usage pattern commonly found with the yo cli.
+## Installation
 
-***
+ This generator can be used with `yarn` or `npm`. This is a [yeoman](http://yeoman.io/) generator and follows the usage pattern commonly found with the yo cli.
 
 #### Yarn
 ```
@@ -42,9 +44,7 @@ npm install
 npm start
 ```
 
-***
-
-#### Context
+## Context
 
 This generator has a devDependency of [@zeal/react-scripts](https://github.com/CodingZeal/create-react-app) which is a fork of the "react CLI" from facebook.  This fork marches closely in step with facebook's version with some differences in configuration.  These changes support some more advanced webpack features as well as plug-and-play with frameworks like Rails and Phoenix.  
 
