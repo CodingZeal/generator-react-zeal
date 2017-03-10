@@ -1,8 +1,9 @@
-### Yeoman Generator for [Zeal's](https://codingzeal.com/) React Boilerplate
+# generator-react-zeal
+
 [![npm version](https://img.shields.io/npm/v/generator-react-zeal.svg)](https://www.npmjs.com/package/generator-react-zeal)
 [![CircleCI](https://circleci.com/gh/CodingZeal/generator-react-zeal.svg?style=shield&circle-token=62c69a799a2c2a4ad70148f0a4a398b38279ad91)](https://circleci.com/gh/CodingZeal/generator-react-zeal)
 
-This generator can be used with `yarn` or `npm`. `generator-react-zeal` is a [yeoman](http://yeoman.io/) generator and follows the usage pattern commonly found with the yo cli.
+Yeoman Generator for [Zeal's](https://codingzeal.com/) React Boilerplate.  This generator can be used with `yarn` or `npm`. This is a [yeoman](http://yeoman.io/) generator and follows the usage pattern commonly found with the yo cli.
 
 ***
 
