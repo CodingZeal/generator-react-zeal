@@ -43,10 +43,6 @@ npm start
 
 ***
 
-#### Examples
-
-Checkout our usage in the context of Phoenix app - https://github.com/CodingZeal/phoenix-react-apollo-demo
-
 #### Context
 
 This generator has a devDependency of [@zeal/react-scripts](https://github.com/CodingZeal/create-react-app) which is a fork of the "react CLI" from facebook.  This fork marches closely in step with facebook's version with some differences in configuration.  These changes support some more advanced webpack features as well as plug-and-play with frameworks like Rails and Phoenix.  
@@ -164,6 +160,13 @@ function MyParentComponent({ theme }) {
 export default themr('', myParentComponentTheme)(MyParentComponent)
 ```
 Above the parent component is overriding the `background-color` by passing custom theme information to the themed component.  We generally wrap all components in `themr`, which allows for great flexibility in using our components elsewhere in our apps.
+
+***
+
+#### Example Applications
+
+Checkout our usage in the context of Phoenix app - https://github.com/CodingZeal/phoenix-react-apollo-demo
+
 
 #### Credits
 
