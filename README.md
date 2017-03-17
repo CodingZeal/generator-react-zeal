@@ -7,7 +7,7 @@ Yeoman Generator for [Zeal's](https://codingzeal.com/) React Boilerplate.
 
 ## Installation
 
- This generator can be used with `yarn` or `npm`. This is a [yeoman](http://yeoman.io/) generator and follows the usage pattern commonly found with the yo cli.
+This is a [yeoman](http://yeoman.io/) generator, so you'll use Yeoman's command-line interface, yo, to run the generator.
 
 #### Yarn
 ```
@@ -18,7 +18,7 @@ yarn global add yo generator-react-zeal
 mkdir myApp && cd myApp
 
 # Run the generator
-yo react-zeal;
+yo react-zeal
 
 # Install
 yarn
@@ -35,7 +35,7 @@ npm install -g yo generator-react-zeal
 mkdir myApp && cd myApp
 
 # Run the generator
-yo react-zeal;
+yo react-zeal
 
 # Install
 npm install
