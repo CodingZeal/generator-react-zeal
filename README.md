@@ -1,58 +1,48 @@
 # generator-react-zeal
 
-Yeoman generator for Zeal's React boilerplate
-
-Expected to be used in the root of a Rails or Phoenix project configured with
-the Zeal client app strategy.
+Yeoman Generator for [Zeal's](https://codingzeal.com/) React Boilerplate.
 
 [![npm version](https://img.shields.io/npm/v/generator-react-zeal.svg)](https://www.npmjs.com/package/generator-react-zeal)
 [![CircleCI](https://circleci.com/gh/CodingZeal/generator-react-zeal.svg?style=shield&circle-token=62c69a799a2c2a4ad70148f0a4a398b38279ad91)](https://circleci.com/gh/CodingZeal/generator-react-zeal)
 
-
 ## Installation
 
-```
-# Install yo cli, as well as this generator, globally using either yarn or npm
+This is a [yeoman](http://yeoman.io/) generator, so you'll use Yeoman's command-line interface, yo, to run the generator.
 
-# with yarn
+#### Yarn
+```
+# Install yo cli, as well as this generator
 yarn global add yo generator-react-zeal
 
-# with npm
-npm install -g yo generator-react-zeal
-```
-
-## Usage
-`generator-react-zeal` is a [yeoman](http://yeoman.io/) generator and follows the usage pattern commonly found with the yo cli.
-
-```
-# Create new directory and `cd` into it
+# If necessary, create new directory and `cd` into it;
 mkdir myApp && cd myApp
 
 # Run the generator
 yo react-zeal
 
-# install all the things
-
-# with yarn
+# Install
 yarn
 
-# with npm
+# start your app on http://localhost:3000
+yarn start
+```
+#### Npm
+```
+# Install npm cli, as well as this generator
+npm install -g yo generator-react-zeal
+
+# If necessary, create new directory and `cd` into it;
+mkdir myApp && cd myApp
+
+# Run the generator
+yo react-zeal
+
+# Install
 npm install
 
 # start your app on http://localhost:3000
-
-# with yarn
-yarn start
-
-# with npm
 npm start
 ```
-
-Voila! Now craft with React.
-
-## Example
-
-Checkout our usage in the context of Phoenix app - https://github.com/CodingZeal/phoenix-react-apollo-demo
 
 ## Context
 
@@ -75,10 +65,10 @@ import styles from './styles.scss'
 
 In order to better support usage inside Rails etc we have moved the public directory inside the client directory.  Thus the frameworks' root will not be cluttered with anything other than the client directory.  The generated app will run with `yarn start` (or `npm start`) and you can still develop on `localhost:3000` if you are not in the context of a larger framework.
 
-## React Toolbox
+#### React Toolbox
 The generator installs by default [React Toolbox](http://react-toolbox.com/) which is a set of Material Design components.  At Zeal we have found this project to be an excellent starting point for many common UI patterns.  You can of-course ignore it and or remove it from the generated app if you are so inclined.
 
-### Using Customizable React Toolbox Components
+#### Using Customizable React Toolbox Components
 To make for the most flexibility when dealing with React Toolbox we recommend following the pattern of manually adding and exporting the desired components theme.  Then instead of importing the pre-themed component from `react-toolbox`, import the un-themed version.  Don't worry, if you have exported the theme manually it will still have the default theme, and now you will have more flexibility in terms of overriding theme defaults.  
 
 For example you would like to use the button component from `react-toolbox` and would like to override the default primary color.  You will want to import / export that button's theme from `react-toolbox` along with a hook for your customization.
@@ -116,14 +106,14 @@ The button would not be affected by the apps theme provider.
 
 Once you have imported the Button component that will respond to the theme provider, you can set the $color-primary in several different ways depending on your needs.  Generally `$color-primary` will be inherited from the react-toolbox default configuration.  You can override it globally in `client/styles/_globals.scss` which will make all react-toolbox components use that configuration for `$color-primary`.  You can see in the generated app we have set the `$color-primary` to the `$zeal-orange` color defined in the `_colors.scss` file.  If however you would like to override that color for a specific component, we recommend creating a new component that imports the button, applies a custom theme, and then exports the button for the rest of the app to use.
 
-### Style Dependencies
+#### Style Dependencies
 
 Many of the React Toolbox components have styles which depend on other components from React Toolbox having their styles present.  For example some of the react components have an option for the 'ripple' effect.  So, if you would like to set that property on a list item or a button etc, you should be sure to import / export the ripple theme as described above.
 
-## Themr
+#### Themr
 The generator installs by default [React CSS Themr](https://github.com/javivelasco/react-css-themr) which allows the decorating of components with a simple mechanism for easily "theming" the components.
 
-### Creating a "Themed" Component
+#### Creating a "Themed" Component
 Creating a themed component is easy, and builds of the concept of composing css modules.  Apply the decorator to a component on export passing a css module and receiving the incoming theme as props.
 
 ```scss
@@ -172,7 +162,14 @@ export default themr('', myParentComponentTheme)(MyParentComponent)
 ```
 Above the parent component is overriding the `background-color` by passing custom theme information to the themed component.  We generally wrap all components in `themr`, which allows for great flexibility in using our components elsewhere in our apps.
 
-## Credits
+***
+
+#### Example Applications
+
+Checkout our usage in the context of a Phoenix app - https://github.com/CodingZeal/phoenix-react-apollo-demo
+
+
+#### Credits
 
 Authored by the Engineering Team of [Coding ZEAL](https://codingzeal.com?utm_source=github)
 
