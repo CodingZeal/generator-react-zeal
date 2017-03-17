@@ -166,7 +166,7 @@ Above the parent component is overriding the `background-color` by passing custo
 
 #### Example Applications
 
-Checkout our usage in the context of Phoenix app - https://github.com/CodingZeal/phoenix-react-apollo-demo
+Checkout our usage in the context of a Phoenix app - https://github.com/CodingZeal/phoenix-react-apollo-demo
 
 
 #### Credits
