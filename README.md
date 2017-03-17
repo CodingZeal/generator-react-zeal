@@ -14,11 +14,11 @@ Yeoman Generator for [Zeal's](https://codingzeal.com/) React Boilerplate.
 # Install yo cli, as well as this generator
 yarn global add yo generator-react-zeal
 
-# If necessary, create new directory and `cd` into it.
+# If necessary, create new directory and `cd` into it;
 mkdir myApp && cd myApp
 
 # Run the generator
-yo react-zeal
+yo react-zeal;
 
 # Install
 yarn
@@ -31,11 +31,11 @@ yarn start
 # Install npm cli, as well as this generator
 npm install -g yo generator-react-zeal
 
-# If necessary, create new directory and `cd` into it.
+# If necessary, create new directory and `cd` into it;
 mkdir myApp && cd myApp
 
 # Run the generator
-yo react-zeal
+yo react-zeal;
 
 # Install
 npm install
