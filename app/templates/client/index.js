@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom'
 import { ApolloProvider } from 'react-apollo'
 import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'react-css-themr'
+import 'roboto-fontface/css/roboto/roboto-fontface.css'
 
 import './styles/commons.scss'
 import theme from './styles/theme'
