@@ -5,6 +5,7 @@ import { ApolloProvider } from 'react-apollo'
 import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'react-css-themr'
 
+import 'material-design-icons/iconfont/material-icons.css'
 import './styles/commons.scss'
 import theme from './styles/theme'
 
