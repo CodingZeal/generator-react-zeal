@@ -1,5 +1,7 @@
 # generator-react-zeal
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/CodingZeal/generator-react-zeal.svg)](https://greenkeeper.io/)
+
 Yeoman Generator for [Zeal's](https://codingzeal.com/) React Boilerplate.
 
 [![npm version](https://img.shields.io/npm/v/generator-react-zeal.svg)](https://www.npmjs.com/package/generator-react-zeal)
