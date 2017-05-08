@@ -12,14 +12,14 @@
   "license": "ISC",
   "dependencies": {
     "humps": "^2.0.0",
-    "yeoman-generator": "^1.0.1"
+    "yeoman-generator": "^1.1.1"
   },
   "scripts": {
     "test": "jest",
     "test:watch": "yarn jest -- --watch --notify"
   },
   "devDependencies": {
-    "jest": "^19.0.2",
+    "jest": "^20.0.0",
     "yeoman-assert": "^3.0.0",
     "yeoman-test": "^1.6.0"
   },
