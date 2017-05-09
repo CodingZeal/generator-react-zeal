@@ -38,12 +38,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "test:once": "CI=true yarn test -- --coverage",
+    "test": "CI=true yarn test:watch -- --coverage",
+    "test:watch": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "npm-run-all --parallel lint:*",
     "lint:js": "eslint 'client/**/*.js' --max-warnings 0",
     "lint:sass": "sass-lint -v --max-warnings 0",
-    "validate": "npm-run-all --parallel lint test:once"
+    "validate": "npm-run-all --parallel lint test"
   }
 }
