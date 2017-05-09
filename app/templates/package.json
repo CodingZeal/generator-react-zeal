@@ -38,7 +38,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "CI=true yarn test:watch -- --coverage",
+    "test": "CI=true react-scripts test --env=jsdom --coverage",
     "test:watch": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "npm-run-all --parallel lint:*",
