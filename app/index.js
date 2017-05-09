@@ -34,6 +34,11 @@ module.exports = class ReactZeal extends Generator {
       this.destinationPath('.sass-lint.yml')
     )
 
+    this.fs.copy(
+      this.templatePath('yarn.lock'),
+      this.destinationPath('yarn.lock')
+    )
+
     this._mergeGitIgnore()
   }
 
