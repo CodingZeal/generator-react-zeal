@@ -1,4 +1,4 @@
-import ApolloClient from 'apollo-client'
+import { ApolloClient } from 'react-apollo'
 
 export default new ApolloClient({
   dataIdFromObject: result => {
