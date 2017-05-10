@@ -10,7 +10,7 @@
     "history": "^4.4.1",
     "material-design-icons": "^3.0.1",
     "normalize.css": "^5.0.0",
-    "npm-run-all": "^4.0.1",
+    "npm-run-all": "^4.0.2",
     "react": "^15.4.1",
     "react-addons-css-transition-group": "^15.4.1",
     "react-addons-test-utils": "^15.4.1",
