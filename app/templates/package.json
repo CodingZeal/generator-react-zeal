@@ -3,18 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@zeal/react-scripts": "^0.2.0",
+    "@zeal/react-scripts": "^0.2.2",
     "apollo-client": "^0.6.0",
-    "babel-eslint": "^7.1.1",
     "babel-polyfill": "^6.20.0",
     "enzyme": "^2.6.0",
-    "eslint": "^3.13.1",
-    "eslint-config-zeal": "^0.17.0",
-    "eslint-import-resolver-webpack": "^0.8.1",
-    "eslint-loader": "^1.6.1",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jest": "^1.0.2",
-    "eslint-plugin-react": "^6.9.0",
     "history": "^4.4.1",
     "immutability-helper": "^2.0.0",
     "material-design-icons": "^3.0.1",
@@ -42,7 +34,7 @@
     "test:watch": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "npm-run-all --parallel lint:*",
-    "lint:js": "eslint 'client/**/*.js' --max-warnings 0",
+    "lint:js": "react-scripts lint --max-warnings 0",
     "lint:sass": "sass-lint -v --max-warnings 0",
     "validate": "npm-run-all --parallel lint test"
   }
