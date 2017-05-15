@@ -2,8 +2,9 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { themr } from 'react-css-themr'
 
-import appTheme from './theme.scss'
 import logo from './logo.png'
+
+import appTheme from './theme.scss'
 
 export function App({ theme }) {
   return (
