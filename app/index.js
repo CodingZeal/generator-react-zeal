@@ -46,6 +46,14 @@ module.exports = class ReactZeal extends Generator {
     this._mergeGitIgnore()
   }
 
+  install() {
+    this.installDependencies({
+      yarn: true,
+      npm: false,
+      bower: false
+    })
+  }
+
   _mergeGitIgnore() {
     const template = this.fs.read(this.templatePath('gitignore'))
     const existing = this.fs.read(this.destinationPath('.gitignore'), {
