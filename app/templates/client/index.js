@@ -1,17 +1,18 @@
 import 'babel-polyfill'
+import 'roboto-fontface/css/roboto/roboto-fontface.css'
+import 'material-design-icons/iconfont/material-icons.css'
+
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { ApolloProvider } from 'react-apollo'
-import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'react-css-themr'
-import 'roboto-fontface/css/roboto/roboto-fontface.css'
+import { BrowserRouter } from 'react-router-dom'
 
-import 'material-design-icons/iconfont/material-icons.css'
+import { apolloClient, configureStore } from './base'
+import App from './modules/app/components/App'
+
 import './styles/commons.scss'
 import theme from './styles/theme'
-
-import App from './modules/app/components/App'
-import { apolloClient, configureStore } from './base'
 
 const rootEl = document.getElementById('root')
 const store = configureStore()
@@ -20,7 +21,7 @@ ReactDOM.render(<Root currentApp={App} />, rootEl)
 
 function Root({ currentApp }) {
   return (
-    <ApolloProvider store={store} client={apolloClient}>
+    <ApolloProvider client={apolloClient} store={store}>
       <ThemeProvider theme={theme}>
         <BrowserRouter>
           {React.createElement(currentApp)}
