@@ -29,8 +29,8 @@ module.exports = class ReactZeal extends Generator {
     )
 
     this.fs.copy(
-      this.templatePath('.eslintrc.json'),
-      this.destinationPath('.eslintrc.json')
+      this.templatePath('.eslintrc.js'),
+      this.destinationPath('.eslintrc.js')
     )
 
     this.fs.copy(
