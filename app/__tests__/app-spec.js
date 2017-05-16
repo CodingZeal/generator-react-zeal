@@ -16,9 +16,7 @@ describe('react-zeal', () => {
     assert.jsonFileContent('package.json', { "name": "apples" })
   })
 
-  test('copies .eslintrc.json file', () => {
-    assert.jsonFileContent('.eslintrc.json', {
-      "extends": [ "zeal", "zeal/react" ]
-    })
+  test('copies .eslintrc.js file', () => {
+    assert.fileContent('.eslintrc.js', 'path.resolve')
   })
 })
