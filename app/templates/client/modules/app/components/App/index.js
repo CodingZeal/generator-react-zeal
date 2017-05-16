@@ -1,25 +1,25 @@
-import React from 'react'
-import { Switch, Route } from 'react-router-dom'
-import { themr } from 'react-css-themr'
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import { themr } from "react-css-themr";
 
-import logo from './logo.png'
+import logo from "./logo.png";
 
-import appTheme from './theme.scss'
+import appTheme from "./theme.scss";
 
 export function App({ theme }) {
   return (
     <div className={theme.app}>
       <div className={theme.header}>
-        <img src={logo} className={theme.logo} alt='logo' />
+        <img src={logo} className={theme.logo} alt="logo" />
         <h4>Welcome!</h4>
       </div>
 
       <Switch>
-        <Route exact path='/' component={Home} />
+        <Route exact path="/" component={Home} />
         <Route component={NotFound} />
       </Switch>
     </div>
-  )
+  );
 }
 
 function Home() {
@@ -27,7 +27,7 @@ function Home() {
     <h5 style={{ margin: 40 }}>
       Home
     </h5>
-  )
+  );
 }
 
 function NotFound() {
@@ -35,7 +35,7 @@ function NotFound() {
     <h5 style={{ margin: 40 }}>
       Route not found
     </h5>
-  )
+  );
 }
 
-export default themr('', appTheme)(App)
+export default themr("", appTheme)(App);
