@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@zeal/react-scripts": "^0.2.3",
+    "@zeal/react-scripts": "^1.0.0",
     "babel-polyfill": "^6.23.0",
     "enzyme": "^2.8.2",
     "history": "^4.6.1",
@@ -23,7 +23,7 @@
     "redux-devtools-extension": "^2.13.2",
     "roboto-fontface": "^0.7.0",
     "sass-lint": "^1.10.2",
-    "zeal-redux-utils": "^0.3.2"
+    "zeal-redux-utils": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

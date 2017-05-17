@@ -14,9 +14,9 @@
   version "0.0.34"
   resolved "https://registry.yarnpkg.com/@types/isomorphic-fetch/-/isomorphic-fetch-0.0.34.tgz#3c3483e606c041378438e951464f00e4e60706d6"
 
-"@zeal/react-scripts@^0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@zeal/react-scripts/-/react-scripts-0.2.3.tgz#94ddb22da7d61bf13a80a8beecaa1dd62edf8cb5"
+"@zeal/react-scripts@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@zeal/react-scripts/-/react-scripts-1.0.0.tgz#26ce8679d5558f760fa76ad14f007b3e65dd8619"
   dependencies:
     autoprefixer "6.7.2"
     babel-core "6.22.1"
@@ -34,7 +34,7 @@
     detect-port "1.1.0"
     dotenv "2.0.0"
     eslint "3.19.0"
-    eslint-config-zeal "^0.21.0"
+    eslint-config-zeal "^1.0.0"
     eslint-import-resolver-webpack "0.8.1"
     eslint-loader "1.6.0"
     eslint-plugin-import "2.2.0"
@@ -2236,9 +2236,9 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-config-zeal@^0.21.0:
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-zeal/-/eslint-config-zeal-0.21.0.tgz#49ebe100537d1147b07dacbc9dfe0c9c0ded509b"
+eslint-config-zeal@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-zeal/-/eslint-config-zeal-1.0.0.tgz#ddf3669352c3d405de194e298b3397061ebaffa4"
 
 eslint-import-resolver-node@^0.2.0:
   version "0.2.3"
@@ -6606,9 +6606,9 @@ yargs@~3.10.0:
     decamelize "^1.0.0"
     window-size "0.1.0"
 
-zeal-redux-utils@^0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/zeal-redux-utils/-/zeal-redux-utils-0.3.2.tgz#6f20558d42e0f627419edf7db87267fe084636de"
+zeal-redux-utils@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/zeal-redux-utils/-/zeal-redux-utils-1.0.0.tgz#478d491373d2fbbda86484cb2490e48c6af9451a"
   dependencies:
     flux-standard-action "^1.0.0"
     ramda "^0.22.1"
