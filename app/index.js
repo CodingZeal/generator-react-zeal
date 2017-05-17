@@ -1,4 +1,5 @@
 const Generator = require('yeoman-generator')
+const commandExists = require('command-exists')
 const humps = require('humps')
 
 module.exports = class ReactZeal extends Generator {
@@ -47,9 +48,10 @@ module.exports = class ReactZeal extends Generator {
   }
 
   install() {
+    const isYarnAvailable = commandExists.sync('yarnpkg')
     this.installDependencies({
-      yarn: true,
-      npm: false,
+      yarn: isYarnAvailable,
+      npm: !isYarnAvailable,
       bower: false
     })
   }
