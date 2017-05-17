@@ -5,7 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/generator-react-zeal/compare/v0.4.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/generator-react-zeal/compare/v1.0.0...HEAD)
+
+## [1.0.0](https://github.com/CodingZeal/generator-react-zeal/compare/v0.4.0...v1.0.0) - 2017-05-17
+
+### Changed
+
+- Upgrade to 1.0.0 versions of @zeal/react-scripts (including eslint-config-zeal) and zeal-redux-utils.  There were no code changes, they were just released as v1.0.0. ([#70](https://github.com/CodingZeal/generator-react-zeal/pull/70))
 
 ## [0.4.0](https://github.com/CodingZeal/generator-react-zeal/compare/v0.3.1...v0.4.0) - 2017-05-16
 
