@@ -37,9 +37,6 @@ mkdir myApp && cd myApp
 # Run the generator
 yo react-zeal
 
-# Install
-npm install
-
 # start your app on http://localhost:3000
 npm start
 ```
