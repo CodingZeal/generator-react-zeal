@@ -1,4 +1,4 @@
-# generator-react-zeal
+# ReactGen (generator-react-zeal)
 
 Yeoman Generator for [Zeal's](https://codingzeal.com/) React Boilerplate.
 
@@ -7,9 +7,10 @@ Yeoman Generator for [Zeal's](https://codingzeal.com/) React Boilerplate.
 
 ## Installation
 
-This is a [yeoman](http://yeoman.io/) generator, so you'll use Yeoman's command-line interface, yo, to run the generator.
+This is a [yeoman](http://yeoman.io/) generator, so you'll use Yeoman's command-line interface, `yo`, to run the generator.
 
 #### Yarn
+
 ```
 # Install yo cli, as well as this generator
 yarn global add yo generator-react-zeal
@@ -20,13 +21,12 @@ mkdir myApp && cd myApp
 # Run the generator
 yo react-zeal
 
-# Install
-yarn
-
 # start your app on http://localhost:3000
 yarn start
 ```
+
 #### Npm
+
 ```
 # Install npm cli, as well as this generator
 npm install -g yo generator-react-zeal
@@ -46,16 +46,50 @@ npm start
 
 ## Context
 
-This generator has a devDependency of [@zeal/react-scripts](https://github.com/CodingZeal/create-react-app) which is a fork of the "react CLI" from facebook.  This fork marches closely in step with facebook's version with some differences in configuration.  These changes support some more advanced webpack features as well as plug-and-play with frameworks like Rails and Phoenix.  
+ReactGen generates a React project that can be run as a standalone project or embedded inside of a back-end application written in Rails, Phoenix, or some other framework.
 
-The features we have added support for include:
+Other than a few configuration files, the entire project lives in the `client` directory, making it easy to embed in another application.  The project is structured as a [modular or domain-style Redux application](https://jaysoo.ca/2016/02/28/organizing-redux-application/).
 
-- CSS Modules
-- SASS
+ReactGen pre-configures a number of packages that we find useful in our front-end applications.  After generating your project, feel free to add or remove packages to match your preferences.
 
-Thus you can import .scss files into your components like so
+These packages include:
+- [jest](http://facebook.github.io/jest/) and [enzyme](http://airbnb.io/enzyme/) for testing;
+- [eslint](http://eslint.org/) and [sass-lint](https://github.com/sasstools/sass-lint) for linting;
+- [redux](http://redux.js.org/);
+- [react-router](https://reacttraining.com/react-router/);
+- [react-toolbox](http://react-toolbox.com/);
+- [CSS Modules](https://glenmaddern.com/articles/css-modules) and [SASS](http://sass-lang.com/) for styling; and
+- [zeal-redux-utils](https://github.com/CodingZeal/zeal-redux-utils)
 
-``` javascript
+ReactGen is built on [@zeal/react-scripts](https://github.com/CodingZeal/create-react-app), our fork of [create-react-app](https://github.com/facebookincubator/create-react-app)'s react-scripts.
+
+## Usage
+
+After generating your application, you can run it using `yarn start` (or `npm start`) and you can develop on `localhost:3000` if you are not in the context of a larger framework.
+
+Other provided `yarn`/`npm` scripts include:
+
+- `build`: Create a production-ready client bundle.  By default, the bundle is placed in the `build` folder, but you can change that by setting the `BUILD_PATH` environment variable.
+
+- `validate`: Run all tests and lint checks.
+
+- `test`: Run tests and code coverage.
+
+- `test:watch`: Run the tests every time a file changes.
+
+- `lint`: Run all lint checks (JS and SASS).
+
+- `lint:js`: Run JavaScript lint checks.
+
+- `lint:sass`: Run SASS lint checks.
+
+- `eject`: Stop depending on @zeal/react-scripts and include all of its dependencies and configuration directly in your project.  You should only need to do this if you need to customize settings in a way that react-scripts doesn't currently support.
+
+#### Styling
+
+Using CSS Modules and SASS you can import `.scss` files into your components like so:
+
+```js
 import styles from './styles.scss'
 
 ...
@@ -63,12 +97,12 @@ import styles from './styles.scss'
 <div className={styles.foo}>...</div>
 ```
 
-In order to better support usage inside Rails etc we have moved the public directory inside the client directory.  Thus the frameworks' root will not be cluttered with anything other than the client directory.  The generated app will run with `yarn start` (or `npm start`) and you can still develop on `localhost:3000` if you are not in the context of a larger framework.
-
 #### React Toolbox
+
 The generator installs by default [React Toolbox](http://react-toolbox.com/) which is a set of Material Design components.  At Zeal we have found this project to be an excellent starting point for many common UI patterns.  You can of-course ignore it and or remove it from the generated app if you are so inclined.
 
 #### Using Customizable React Toolbox Components
+
 To make for the most flexibility when dealing with React Toolbox we recommend following the pattern of manually adding and exporting the desired components theme.  Then instead of importing the pre-themed component from `react-toolbox`, import the un-themed version.  Don't worry, if you have exported the theme manually it will still have the default theme, and now you will have more flexibility in terms of overriding theme defaults.  
 
 For example you would like to use the button component from `react-toolbox` and would like to override the default primary color.  You will want to import / export that button's theme from `react-toolbox` along with a hook for your customization.
@@ -111,9 +145,11 @@ Once you have imported the Button component that will respond to the theme provi
 Many of the React Toolbox components have styles which depend on other components from React Toolbox having their styles present.  For example some of the react components have an option for the 'ripple' effect.  So, if you would like to set that property on a list item or a button etc, you should be sure to import / export the ripple theme as described above.
 
 #### Themr
+
 The generator installs by default [React CSS Themr](https://github.com/javivelasco/react-css-themr) which allows the decorating of components with a simple mechanism for easily "theming" the components.
 
 #### Creating a "Themed" Component
+
 Creating a themed component is easy, and builds of the concept of composing css modules.  Apply the decorator to a component on export passing a css module and receiving the incoming theme as props.
 
 ```scss
@@ -166,7 +202,7 @@ Above the parent component is overriding the `background-color` by passing custo
 
 #### Example Applications
 
-Checkout our usage in the context of a Phoenix app - https://github.com/CodingZeal/phoenix-react-apollo-demo
+Check out our usage in the context of a Phoenix app - https://github.com/CodingZeal/phoenix-react-apollo-demo
 
 
 #### Credits
