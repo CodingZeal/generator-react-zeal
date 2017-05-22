@@ -20,6 +20,7 @@
 
 .navbar {
   z-index: 1;
+  display: block;
   background-color: hsla(0, 0%, 100%, .98);
 }
 
@@ -40,8 +41,6 @@
 }
 
 .nav-bar-styles {
-  padding-top: 0px;
-  padding-bottom: 0px;
   background-color: rgba(238, 241, 243, .07);
 }
 
