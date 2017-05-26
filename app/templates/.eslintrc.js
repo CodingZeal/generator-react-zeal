@@ -1,20 +1,17 @@
-const path = require('path')
+const path = require("path");
 
 module.exports = {
-  extends: [
-    'zeal',
-    'zeal/react'
-  ],
+  extends: ["zeal", "zeal/react", "prettier", "prettier/react"],
   root: true,
   settings: {
-    'import/resolver': {
+    "import/resolver": {
       webpack: {
         config: {
           resolve: {
-            root: path.resolve(__dirname, 'client')
+            root: path.resolve(__dirname, "client")
           }
         }
       }
     }
   }
-}
+};
