@@ -19,11 +19,7 @@ module.exports = class ReactZeal extends Generator {
   }
 
   writing() {
-    this.fs.copyTpl(
-      this.templatePath("package.json"),
-      this.destinationPath("package.json"),
-      { appName: this.appName }
-    );
+    this._installPackageJson();
 
     this.fs.copy(this.templatePath("client"), this.destinationPath("client"), {
       globOptions: { dot: true }
@@ -54,6 +50,15 @@ module.exports = class ReactZeal extends Generator {
       npm: !isYarnAvailable,
       bower: false
     });
+  }
+
+  _installPackageJson() {
+    const json = this.fs.readJSON(this.templatePath("package.json"));
+
+    json.name = this.appName;
+    delete json["lint-staged"].gitDir;
+
+    this.fs.writeJSON(this.destinationPath("package.json"), json);
   }
 
   _mergeGitIgnore() {

@@ -17,6 +17,14 @@ describe("react-zeal", () => {
     assert.jsonFileContent("package.json", { name: "apples" });
   });
 
+  test("generated package.json does not have lint-staged gitDir option", () => {
+    assert.noJsonFileContent("package.json", {
+      "lint-staged": {
+        gitDir: "../.."
+      }
+    });
+  });
+
   test("copies .eslintrc.js file", () => {
     assert.fileContent(".eslintrc.js", "path.resolve");
   });
