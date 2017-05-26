@@ -12,7 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "command-exists": "^1.2.2",
-    "eslint-config-prettier": "^2.1.1",
     "humps": "^2.0.0",
     "yeoman-generator": "^1.1.1"
   },
