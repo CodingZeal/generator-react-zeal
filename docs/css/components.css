@@ -590,7 +590,7 @@ textarea.w-select {
     width: 100%;
   }
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 563px) {
   .w-container {
     max-width: none;
   }
