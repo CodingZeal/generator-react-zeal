@@ -1,3 +1,5 @@
+![Alt text](docs/images/react-generator-logo-no-type.png)
+
 # ReactGen (generator-react-zeal)
 
 Yeoman Generator for [Zeal's](https://codingzeal.com/) React Boilerplate.
