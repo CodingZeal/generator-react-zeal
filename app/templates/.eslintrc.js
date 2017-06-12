@@ -14,14 +14,14 @@ const path = require("path");
 //   from above.
 //
 // - `webpack.config.dev.js` imports `config/env.js`.  Since this is now a
-//   different process, that file is reloaded when re-does the NODE_PATH
-//   transformation, removing the now-absolute path to our `client` directory.
+//   different process, that file is reloaded which.  It reloads our `.env`
+//   file, but since dotenv ["will never modify any environment variables that
+//   have already been set"](https://www.npmjs.com/package/dotenv#what-happens-to-environment-variables-that-were-already-set),
+//   the now-absolute NODE_PATH entry gets removed during the NODE_PATH
+//   transformation.
 //
 // - As a result, `eslint` can't properly resolve any of our module imports.
 //
-// What is not clear: Why doesn't the second load of `config/env.js` also reload
-// the `.env` file and get another copy of `./client`? We will need to
-// investigate this further.
 
 module.exports = {
   extends: ["zeal", "zeal/react", "prettier", "prettier/react"],
