@@ -23,6 +23,8 @@ const path = require("path");
 // - As a result, `eslint` can't properly resolve any of our module imports.
 //
 
+const paths = require("@zeal/react-scripts/config/paths");
+
 module.exports = {
   extends: ["zeal", "zeal/react", "prettier", "prettier/react"],
   root: true,
@@ -31,14 +33,7 @@ module.exports = {
       webpack: {
         config: {
           resolve: {
-            modules: [
-              "node_modules",
-              path.resolve(
-                __dirname,
-                "node_modules/@zeal/react-scripts/node_modules"
-              ),
-              path.resolve(__dirname, "client")
-            ]
+            modules: [paths.ownNodeModules, paths.appNodeModules, paths.appSrc]
           }
         }
       }
