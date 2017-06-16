@@ -26,6 +26,6 @@ describe("react-zeal", () => {
   });
 
   test("copies .eslintrc.js file", () => {
-    assert.fileContent(".eslintrc.js", "path.resolve");
+    assert.fileContent(".eslintrc.js", "paths.appSrc");
   });
 });

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@zeal/react-scripts": "^1.0.0",
+    "@zeal/react-scripts": "^2.0.0",
     "babel-polyfill": "^6.23.0",
     "enzyme": "^2.8.2",
     "eslint": "3.19.0",

@@ -1,5 +1,3 @@
-const path = require("path");
-
 // Ideally, we'd point the import resolver to
 // `node_modules/@zeal/react-scripts/config/webpack.config.dev.js` instead of
 // having our own configuration here.  However, that doesn't currently work:
