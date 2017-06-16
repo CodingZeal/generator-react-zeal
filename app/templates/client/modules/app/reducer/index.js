@@ -1,10 +1,10 @@
-import createReducer from 'utils/createReducer'
+import createReducer from "utils/createReducer";
 
-const initialState = {}
+const initialState = {};
 
 const handlers = {
   // Pattern:
   // [ActionTypes.ACTION_NAME]: actionFunction
-}
+};
 
-export default createReducer(initialState, handlers)
+export default createReducer(initialState, handlers);

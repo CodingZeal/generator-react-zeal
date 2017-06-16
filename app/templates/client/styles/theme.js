@@ -1,5 +1,5 @@
 /* @flow */
 
-import * as ToolboxTheme from './react-toolbox'
+import * as ToolboxTheme from "./react-toolbox";
 
-export default { ...ToolboxTheme }
+export default { ...ToolboxTheme };
