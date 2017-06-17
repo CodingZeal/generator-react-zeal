@@ -5,7 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/generator-react-zeal/compare/v1.0.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/generator-react-zeal/compare/v2.0.0...HEAD)
+
+## [2.0.0](https://github.com/CodingZeal/generator-react-zeal/compare/v1.0.0...v2.0.0) - 2017-06-16
+
+### BREAKING
+
+- If you previously used ReactGen to generate your project, you can re-run it to get the latest updates, but you will likely run into a number of conflicts.  To upgrade manually:
+
+- `yarn upgrade @zeal/react-scripts`
+- `yarn add eslint@3.19.0 eslint-config-prettier husky lint-staged prettier`
+- Create the file `.env` with the contents `NODE_PATH = ./client`.
+- Create the file `.env.development` with the contents `APP_PORT = 3000` (or whatever port your host back-end application uses, if any).
+- Update your `.eslintrc.js` file:
+  - Add `"prettier"` and `"prettier/react"` to the `extends` array.
+  - Change the line `root: path.resolve(__dirname, "client")` to `modules: [paths.ownNodeModules, paths.]`
+  - Apply the changes in [this diff](https://github.com/CodingZeal/generator-react-zeal/pull/82/files#diff-fdbfd4c783ed366394fb487018501d97) to your `.eslintrc.js` file.
+- As you change code and commit it, it will automatically be re-formatted with prettier.
+
+### Changed
+
+- Upgrade to version 2.0.0 of @zeal/react-scripts.  We now use `NODE_PATH` (defined in `.env`) to resolve module imports.  We use `APP_PORT` (defined in `.env.development`) to open the correct browser URL when running the `start` script.  If you're running in the context of a back-end application, edit this file to use the correct port.  Update the eslint configuration's import resolver for Webpack 2. ([#82](https://github.com/CodingZeal/generator-react-zeal/pull/82))
+
+- Adopt [prettier](https://github.com/prettier/prettier) for code formatting.  All code has been reformatted using prettier's default settings.  The eslint configuration has been updated accordingly.  There is also a pre-commit hook that will warn if there are files that have not been formatted correctly. ([#62](https://github.com/CodingZeal/generator-react-zeal/pull/62))
 
 ## [1.0.0](https://github.com/CodingZeal/generator-react-zeal/compare/v0.4.0...v1.0.0) - 2017-05-17
 
