@@ -66,6 +66,8 @@ ReactGen is built on [@zeal/react-scripts](https://github.com/CodingZeal/create-
 
 After generating your application, you can run it using `yarn start` (or `npm start`) and you can develop on `localhost:3000` if you are not in the context of a larger framework.
 
+If you are in the context of a larger framework, you can customize the `APP_PORT` variable in `.env.development` to match the port where the host application runs.  You can then develop in the context of that application instead.
+
 Other provided `yarn`/`npm` scripts include:
 
 - `build`: Create a production-ready client bundle.  By default, the bundle is placed in the `build` folder, but you can change that by setting the `BUILD_PATH` environment variable.

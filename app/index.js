@@ -25,6 +25,12 @@ module.exports = class ReactZeal extends Generator {
       globOptions: { dot: true }
     });
 
+    this.fs.copy(this.templatePath(".env"), this.destinationPath(".env"));
+    this.fs.copy(
+      this.templatePath(".env.development"),
+      this.destinationPath(".env.development")
+    );
+
     this.fs.copy(
       this.templatePath(".eslintrc.js"),
       this.destinationPath(".eslintrc.js")
