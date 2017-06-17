@@ -25,7 +25,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
-- Upgrade to version 2.0.0 of @zeal/react-scripts.  We now use `NODE_PATH` (defined in `.env`) to resolve module imports.  We use `APP_PORT` (defined in `.env.development`) to open the correct browser URL when running the `start` script.  If you're running in the context of a back-end application, edit this file to use the correct port.  Update the eslint configuration's import resolver for Webpack 2. ([#82](https://github.com/CodingZeal/generator-react-zeal/pull/82))
+- Upgrade to version 2.0.0 of @zeal/react-scripts which is based on create-react-app 1.0.7.  We now use `NODE_PATH` (defined in `.env`) to resolve module imports.  We use `APP_PORT` (defined in `.env.development`) to open the correct browser URL when running the `start` script.  If you're running in the context of a back-end application, edit this file to use the correct port.  Update the eslint configuration's import resolver for Webpack 2. ([#82](https://github.com/CodingZeal/generator-react-zeal/pull/82))
 
 - Adopt [prettier](https://github.com/prettier/prettier) for code formatting.  All code has been reformatted using prettier's default settings.  The eslint configuration has been updated accordingly.  There is also a pre-commit hook that will warn if there are files that have not been formatted correctly. ([#62](https://github.com/CodingZeal/generator-react-zeal/pull/62))
 
