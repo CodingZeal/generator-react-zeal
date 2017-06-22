@@ -33,6 +33,7 @@
   "scripts": {
     "build": "react-scripts build",
     "eject": "react-scripts eject",
+    "format": "prettier --write 'client/**/*.js'",
     "lint": "npm-run-all --parallel lint:*",
     "lint:js": "react-scripts lint --max-warnings 0",
     "lint:sass": "sass-lint -v --max-warnings 0",
