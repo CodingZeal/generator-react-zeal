@@ -84,6 +84,8 @@ Other provided `yarn`/`npm` scripts include:
 
 - `lint:sass`: Run SASS lint checks.
 
+- `format`: Run prettier to re-format the entire codebase.  This is handy if you don't have an editor integration set up for prettier.
+
 - `eject`: Stop depending on @zeal/react-scripts and include all of its dependencies and configuration directly in your project.  You should only need to do this if you need to customize settings in a way that react-scripts doesn't currently support.
 
 #### Styling
