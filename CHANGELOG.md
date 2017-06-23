@@ -5,7 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/generator-react-zeal/compare/v2.0.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/generator-react-zeal/compare/v2.1.0...HEAD)
+
+## [2.1.0](https://github.com/CodingZeal/generator-react-zeal/compare/v2.0.0...v2.1.0) - 2017-06-23
+
+### Added
+
+- Add a `format` script to the generated project to allow easy re-formatting of the code using prettier.  This is particularly useful if you don't have an editor integration configured for prettier. ([#83](https://github.com/CodingZeal/generator-react-zeal/pull/83))
 
 ## [2.0.0](https://github.com/CodingZeal/generator-react-zeal/compare/v1.0.0...v2.0.0) - 2017-06-16
 
