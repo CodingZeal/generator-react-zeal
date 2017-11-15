@@ -56,7 +56,7 @@ These packages include:
 - [eslint](http://eslint.org/) and [sass-lint](https://github.com/sasstools/sass-lint) for linting;
 - [redux](http://redux.js.org/);
 - [react-router](https://reacttraining.com/react-router/);
-- [react-toolbox](http://react-toolbox.com/);
+- [react-toolbox](http://react-toolbox.io/);
 - [CSS Modules](https://glenmaddern.com/articles/css-modules) and [SASS](http://sass-lang.com/) for styling; and
 - [zeal-redux-utils](https://github.com/CodingZeal/zeal-redux-utils)
 
