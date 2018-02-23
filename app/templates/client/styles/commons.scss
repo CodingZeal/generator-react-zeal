@@ -1,3 +1,58 @@
+@import "../../node_modules/modern-normalize/modern-normalize.css";
+
 html {
+  font-family: serif;
   font-size: 100%;
+}
+
+p {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+blockquote {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sans-serif;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3.25rem;
+  margin-top: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-top: 3rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.75rem;
 }

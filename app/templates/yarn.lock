@@ -4646,6 +4646,10 @@ mkdirp@0.5.1, mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdi
   dependencies:
     minimist "0.0.8"
 
+modern-normalize@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/modern-normalize/-/modern-normalize-0.4.0.tgz#1ccbc52861e1bce258144d28e890dc709b120ed2"
+
 ms@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
