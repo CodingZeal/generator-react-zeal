@@ -23,9 +23,7 @@ function Root({ currentApp }) {
   return (
     <ApolloProvider client={apolloClient} store={store}>
       <ThemeProvider theme={theme}>
-        <BrowserRouter>
-          {React.createElement(currentApp)}
-        </BrowserRouter>
+        <BrowserRouter>{React.createElement(currentApp)}</BrowserRouter>
       </ThemeProvider>
     </ApolloProvider>
   );

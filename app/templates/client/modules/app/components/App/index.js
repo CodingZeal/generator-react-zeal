@@ -23,19 +23,11 @@ export function App({ theme }) {
 }
 
 function Home() {
-  return (
-    <h5 style={{ margin: 40 }}>
-      Home
-    </h5>
-  );
+  return <h5 style={{ margin: 40 }}>Home</h5>;
 }
 
 function NotFound() {
-  return (
-    <h5 style={{ margin: 40 }}>
-      Route not found
-    </h5>
-  );
+  return <h5 style={{ margin: 40 }}>Route not found</h5>;
 }
 
 export default themr("", appTheme)(App);
