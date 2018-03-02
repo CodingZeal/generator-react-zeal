@@ -1,6 +1,3 @@
-@import '~react-toolbox/lib/colors';
-
-// Reference react-toolbox colors here https://github.com/react-toolbox/react-toolbox/blob/dev/components/_colors.scss.
-// Define colors with HEX values here - example:
-
+$white: #fff;
+$dark-gray: darken($white, 75);
 $zeal-orange: #d85226;
