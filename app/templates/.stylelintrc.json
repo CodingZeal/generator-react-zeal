@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "at-rule-no-unknown": [true, { "ignoreAtRules": ["extend"] }],
+    "declaration-block-single-line-max-declarations": "never",
+    "order/properties-alphabetical-order": [true, { "severity": "warning" }],
+    "property-no-unknown": [true, { "ignoreProperties": ["composes"] }],
+    "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$"
+    }
+}

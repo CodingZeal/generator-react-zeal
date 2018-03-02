@@ -27,7 +27,10 @@
     "redux": "^3.6.0",
     "redux-devtools-extension": "^2.13.2",
     "roboto-fontface": "^0.7.0",
-    "sass-lint": "^1.10.2",
+    "stylelint": "^9.1.1",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^0.8.1",
+    "stylelint-scss": "^2.4.0",
     "zeal-redux-utils": "^1.0.0"
   },
   "scripts": {
@@ -36,7 +39,7 @@
     "format": "prettier --write 'client/**/*.js'",
     "lint": "npm-run-all --parallel lint:*",
     "lint:js": "react-scripts lint --max-warnings 0",
-    "lint:sass": "sass-lint -v --max-warnings 0",
+    "lint:sass": "stylelint -v --max-warnings 0",
     "precommit": "lint-staged",
     "start": "react-scripts start",
     "test": "CI=true react-scripts test --env=jsdom --coverage",
