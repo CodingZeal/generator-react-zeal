@@ -1,13 +1,10 @@
-import { applyMiddleware, createStore } from "redux";
-import { composeWithDevTools } from "redux-devtools-extension/developmentOnly";
+import { createStore } from "redux";
 
-import apolloClient from "./apolloClient";
 import reducer from "./reducer";
 
 export default function configureStore() {
   const store = createStore(
-    reducer,
-    composeWithDevTools(applyMiddleware(apolloClient.middleware()))
+    reducer
   );
 
   if (module.hot) {
