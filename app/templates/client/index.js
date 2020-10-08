@@ -4,7 +4,7 @@ import "material-design-icons/iconfont/material-icons.css";
 
 import React from "react";
 import ReactDOM from "react-dom";
-import { ApolloProvider } from "react-apollo";
+import { ApolloProvider } from "@apollo/client";
 import { ThemeProvider } from "react-css-themr";
 import { BrowserRouter } from "react-router-dom";
 

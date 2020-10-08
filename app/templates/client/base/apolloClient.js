@@ -1,10 +1,9 @@
-import { ApolloClient } from "react-apollo";
+import { ApolloClient, InMemoryCache } from '@apollo/client';
+import { config } from "config";
+
+const { API_URI } = config;
 
 export default new ApolloClient({
-  dataIdFromObject: result => {
-    if (result.id && result.__typename) {
-      return result.__typename + result.id;
-    }
-    return null;
-  }
+  uri: API_URI,
+  cache: new InMemoryCache()
 });
